@@ -1,0 +1,38 @@
+<ul id="ul">
+	<li ng-repeat="ad in data.ads">
+		<div class="container well">
+			<div class="row">
+				<div class="col-md-8">
+					<h3>
+						{{ad.title}}
+					</h3>
+				</div>
+				<div class="col-md-4">
+					<span class="pull-right">
+						{{ad.date | date: 'dd-MMM-yyyy'}}
+					</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<img src="" ng-src="{{ad.imageDataUrl}}" class="thumbnail">
+				</div>
+				<div class="col-md-8">
+					{{ad.text}}
+					<div class="row">
+					<div class="col-md-4">
+						<strong>Name: <br>
+						Email: <br>
+						Phone: <br>
+						</strong>
+					</div>
+					<div class="col-md-8">
+					  {{ad.ownerName}} <br>
+					  {{ad.ownerEmail}} <br>	{{ad.ownerPhone}} <br>
+					</div>
+				</div>
+				</div>
+				
+			</div>	
+	</li>
+</ul>
