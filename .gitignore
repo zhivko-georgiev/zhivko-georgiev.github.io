@@ -1,0 +1,22 @@
+# Kiro
+.kiro/
+
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# macOS
+.DS_Store
+
+# Ruby/Bundler
+Gemfile.lock
+vendor/
+.bundle/
+
+# Editor
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
